@@ -1,0 +1,9 @@
+{
+  "name": "glorious-code-animation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@glorious/demo": "^0.7.0"
+  }
+}

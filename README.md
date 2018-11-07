@@ -2,13 +2,6 @@
 
 > The easiest way to demonstrate your code in action.
 
-[![CircleCI](https://circleci.com/gh/glorious-codes/glorious-demo.svg?style=svg)](https://circleci.com/gh/glorious-codes/glorious-demo)
-[![codecov](https://codecov.io/gh/glorious-codes/glorious-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/glorious-codes/glorious-demo)
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/4738687/44633197-01fa4900-a95e-11e8-9b53-66e9043e2533.gif" />
-</p>
-
 ## Installation
 
 ```
@@ -22,11 +15,7 @@ npm install @glorious/demo --save
 <script src="node_modules/@glorious/demo/dist/gdemo.min.js"></script>
 ```
 
-_Note: If you're not into package management, load it from a third-party [CDN provider](https://github.com/rafaelcamargo/glorious-demo/wiki/CDN-Providers)._
-
 ```javascript
-// Constructor receives a selector that indicates
-// where to inject the demonstration in your page.
 const demo = new GDemo('#container');
 
 const code = `
@@ -46,8 +35,6 @@ demo
   .command('')
   .end();
 ```
-
-_NOTE: Check [here](https://github.com/rafaelcamargo/glorious-demo/wiki/Syntax-highlight) to know how to use Prism to get your code highlighted._
 
 ### API
 
@@ -167,39 +154,3 @@ demo
 #### `end`
 
 Indicates the end of the demonstration. Do not forget to invoke it at the end of your demo. Otherwise, the demo won't be played.
-
-## Contributing
-
-1. Install [Node](https://nodejs.org/en/). Download the "Recommend for Most Users" version.
-
-2. Clone the repo:
-
-```bash
-git clone git@github.com:glorious-codes/glorious-demo.git
-```
-
-3. Go to the project directory:
-
-```bash
-cd glorious-demo
-```
-
-4. Install the project dependencies:
-
-```bash
-npm install
-```
-
-5. Build the project:
-
-```bash
-npm run build
-```
-
-## Tests
-
-Ensure that all code that you have added is covered with unit tests:
-
-```bash
-npm run test -- --coverage
-```
